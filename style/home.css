@@ -1,0 +1,37 @@
+/* Agregando variables */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+
+    /* Color */
+    --title-Color: #7F7F7F;
+    --text-Color: #4D4D4D;
+    --random-color: #3B3B39;
+    --extra-color: #999999;
+
+    /*Fonts */
+    --title-font: 'Yanone Kaffeesatz', sans-serif;
+    --text-font: 'Josefin Sans', sans-serif;
+    --random-font: 'Josefin Sans', sans-serif;
+    --extra-font:'Amatic SC', cursive;
+
+    --random-font-wight: 200;
+    --text-font-wight: 300;
+    --title-font-wight: 500;
+    --extra-font-wight: 700;
+    
+    /*Size  */
+    --title-size: 25px;
+    --text-size: 20px;
+    --random-size: 15px;
+    --extra-font-size: 21px;
+
+    /*Background Color  */
+    --background-color:  #210B17;
+    --random-background-color: #060405 ;
+    --extra-background-color: #111111;
+}
