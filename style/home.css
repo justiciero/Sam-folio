@@ -58,6 +58,7 @@ header .profile-img{
     height: 100px;
     border-radius: 100%;
     border: 3px solid blueviolet;
+    cursor: pointer;
 }
 
 header .profile-img img{
@@ -124,6 +125,7 @@ header .social-media-unique{
     font-size: var(--title-size);
     border: 1px solid blue;
     background-color:pink;
+    cursor: pointer;
 }
 
 main{ 
@@ -214,7 +216,7 @@ main .project-section .project-section-scroll{
 
 .project-section .project-section-scroll .project-cards--img{
     /* position: absolute; */
-    width: 250px;
+    width: 100%;
     height: 350px;
     border-radius: 15px;
     cursor: pointer;
@@ -305,7 +307,6 @@ main .news-section .special-news{
     width: 100%;
     height: auto;
     padding: 20px 10px;
-    background-color: var(--background-color);
 }
 
 main .news-section .special-news p{
@@ -328,6 +329,7 @@ main .news-section .news-container .news-article{
     height: auto;
     padding: 5px;
     border: 1px solid #7F7F7F;
+    cursor: pointer;
 }
 .news-article h3{
     font-size: var(--title-size);
@@ -356,6 +358,7 @@ aside section{
     width: 90%;
     height: auto;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 aside .aside-section-1{
@@ -396,4 +399,129 @@ footer{
     text-align: center;
     background-color: var(--background-color);
     color: var(--oficial-color);
+}
+
+@media (min-width: 450px) {
+    header{
+        max-width: 600px;
+        height: 250px;
+        background-position: center;
+    }
+    main{
+        max-width: 600px;
+    }
+
+    /* main .news-section .news-container .news-article{
+        width: 200px;
+    } */
+
+    aside{
+        max-width: 600px;
+    }
+    footer{
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 601px) {
+    header{
+        max-width: 790px;
+        height: 300px;
+        background-position: center;
+    }
+
+    header .social-media-unique{
+        right: 50%;
+        left: 50%;
+        width: 90px;
+    }
+
+    main{
+        max-width: 790px;
+    }
+
+    main .news-section .news-container .news-article{
+        width: 260px;
+    }
+
+    aside{
+        max-width: 790px;
+    }
+    footer{
+        max-width: 790px;
+    }
+}
+
+@media (min-width: 791px) {
+    header{
+        max-width: 1024px;
+        height: 400px;
+        background-position: center;
+    }
+    header .social-media-unique{
+        right: 50%;
+        left: 50%;
+        width: 90px;
+    }
+    
+    main{
+        max-width: 1024px;
+    }
+
+    main .news-section .news-container .news-article{
+        width: 290px;
+    }
+
+    aside{
+        max-width: 1024px;
+    }
+    footer{
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1025px) {
+        header{
+            max-width: 2560px;
+            height: 490px;
+            background-position: center;
+        }
+        header .profile-img{
+            bottom: 90px;
+            width: 160px;
+            height: 160px;
+        }
+        
+        main{
+            max-width: 2560px;
+        }
+        main .aboutme-section{
+           padding: 50px 0;
+        }
+
+        .project-section .project-section-scroll .project-cards{
+            height: 400px;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        .project-section .project-section-scroll .project-cards--img{
+            height: 400px;
+        }
+
+        main .news-section{
+           padding: 50px 0;
+        }
+    
+        main .news-section .news-container .news-article{
+            width: 280px;
+        }
+    
+        aside{
+            max-width: 2560px;
+        }
+
+        footer{
+            max-width: 2560px;
+        }
 }
