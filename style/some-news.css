@@ -65,11 +65,11 @@ header .project-nav{
 header .project-nav .back-btn{
     width: 30px;
     height: 30px;
+    border: none;
     border-radius: 100%;
     background: url('../assets/icons/previous.png');
     background-repeat: no-repeat;
     background-size: cover;
-    cursor: pointer;
 }
 
 header .project-nav .profile-img{
@@ -99,4 +99,80 @@ header .project-nav h3{
 header .project-nav h3 a{
     text-decoration: none;
     color: var(--oficial-color);
+}
+
+
+main{
+    width: 100%;
+    min-width: 320px;
+    max-width: 450px;
+    height: auto;
+    background: var(--background-color);
+    position: absolute;
+}
+
+main .news-section{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+main .news-section h2{
+    text-align: center;
+    font-size: var(--title-size);
+    font-family: var(--title-font);
+    font-weight: var(--title-font-wight);
+    margin-bottom: 10px;
+}
+
+main .news-section h2 a{
+    color: var(--oficial-color);
+    text-decoration: none;
+}
+
+main .news-section .news-article{
+    height: auto;
+}
+
+main .news-section .special-news{
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+}
+
+main .news-section .special-news p{
+    color: var(--oficial-color);
+}
+
+main .news-section .news-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+main .news-section .news-container .news-article{
+    width: 100%;
+    /* width: 190px; */
+    height: auto;
+    padding: 5px;
+    border: 1px solid #7F7F7F;
+    cursor: pointer;
+}
+.news-article h3{
+    font-size: var(--title-size);
+    font-family: var(--title-font);
+    font-weight: var(--title-font-wight);
+    color: var(--title-Color);
+    border-bottom: 1px solid red;
+    margin-bottom: 15px;
+}
+.news-article p{
+    color: var(--oficial-color);;
+    font-size: var(--text-size);
+    font-family: var(--text-font);
+    font-weight: var(--text-font-wight);
 }

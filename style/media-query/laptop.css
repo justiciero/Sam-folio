@@ -3,6 +3,20 @@ header{
         height: 490px;
         background-position: center;
     }
+
+    header .profile-img{
+        bottom:0;
+    }
+
+    main .aboutme-section{
+        padding: 0px 0;
+    }
+    
+    main .aboutme-section .as--article{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
     .status-section{
         height: auto;
         max-width: 2560px;

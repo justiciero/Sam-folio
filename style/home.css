@@ -45,17 +45,18 @@ header{
     width: 100%;
     min-width: 320px;
     max-width: 450px;
-    height: 200px;
+    height: 150px;
     padding: 40px 0;
     background:rgba(0,0,0,0.7) url("../assets/image/viaje-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     background-blend-mode: darken;
 }
 
 header .profile-img{
     position: absolute;
-    bottom: 5px;
+    bottom: -50px;
     left: 10px;
     width: 100px;
     height: 100px;
@@ -138,7 +139,7 @@ main{
     height: auto;
     background-color: var(--background-color);
     color: var(--oficial-color);
-    padding-top: 10px;
+    padding: 30px 0;
 }
 main section{
     width: 90%;
@@ -147,8 +148,14 @@ main section{
 }
 
 main .aboutme-section{
-    border-top: 1px solid red;
+    width: 100%;
+    border-bottom: 1px solid red;
     padding: 10px 0;
+}
+
+main .aboutme-section .as--article{
+    width: 95%;
+    margin: 40px auto 0;
 }
 
 main .aboutme-section .as--article h1{
@@ -156,7 +163,6 @@ main .aboutme-section .as--article h1{
     font-family: var(--title-font);
     font-weight: var(--title-font-wight);
     color: var(--title-Color);
-    text-decoration: underline;
     margin-bottom: 10px;
 }
 
@@ -172,8 +178,8 @@ main .aboutme-section .as--article p a{
     color: var(--title-Color);
 }
 
+
 main .project-section{
-    border-top: 1px solid salmon;
     padding: 15px 0;
 }
 
@@ -379,6 +385,32 @@ main .news-section .news-container .news-article{
     font-size: var(--text-size);
     font-family: var(--text-font);
     font-weight: var(--text-font-wight);
+}
+
+main .shop-views{
+    padding-top: 30px;
+}
+
+.shop-views h3{
+    font-family: var(--extra-font);
+    font-size: var(--title-size);
+    color: yellow;
+    text-align: center;
+}
+
+.shop-views .web-selling{
+    width: 90%;
+    gap: 10px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .shop-views .web-selling .web-container{
+    width: 250px;
+    height: 310px;
+    background-color: #4D4D4D;
+
 }
 
 aside{
