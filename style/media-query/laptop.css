@@ -1,0 +1,58 @@
+header{
+        max-width: 2560px;
+        height: 490px;
+        background-position: center;
+    }
+    .status-section{
+        height: auto;
+        max-width: 2560px;
+    }
+    .article-container{
+        height: 100%;
+        width: 40%;
+        margin: 0 auto;
+    }
+    header .profile-img{
+        bottom: 90px;
+        width: 160px;
+        height: 160px;
+    }
+    
+    main{
+        max-width: 2560px;
+    }
+    main .aboutme-section{
+       padding: 50px 0;
+    }
+
+    .project-section .project-section-scroll .project-cards{
+        height: 400px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+    }
+
+    .project-section .project-section-scroll .project-cards--img{
+        height: 400px;
+    }
+
+    main .news-section{
+       padding: 50px 0;
+    }
+
+    main .news-section .news-container .news-article{
+        width: 280px;
+    }
+
+    main .top-projects .project-container .top-project-card{
+        width: 250px;
+        height: 280px;
+    }
+
+    
+    aside{
+        max-width: 2560px;
+    }
+
+    footer{
+        max-width: 2560px;
+    }

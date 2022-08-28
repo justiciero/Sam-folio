@@ -1,0 +1,187 @@
+.inactive{
+    display: none;
+}
+:root{
+
+    /* Color */
+    --oficial-color: grey;
+    --title-Color: #7F7F7F;
+    --text-Color: #4D4D4D;
+    --random-color: #3B3B39;
+    --extra-color: #999999;
+
+    /*Fonts */
+    --title-font: 'Yanone Kaffeesatz', sans-serif;
+    --text-font: 'Josefin Sans', sans-serif;
+    --random-font: 'Josefin Sans', sans-serif;
+    --extra-font:'Amatic SC', cursive;
+
+    --random-font-wight: 200;
+    --text-font-wight: 300;
+    --title-font-wight: 500;
+    --extra-font-wight: 700;
+    
+    /*Size  */
+    --title-size: 25px;
+    --text-size: 20px;
+    --random-size: 15px;
+    --extra-font-size: 21px;
+
+    /*Background Color  */
+    --background-color:  #210B17;
+    --random-background-color: #060405 ;
+    --extra-background-color: #111111;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    min-width: 320px;
+    max-width: 450px;
+    height: auto;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.4) url('../assets/image/viaje-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: color-dodge;
+}
+
+header .project-nav{
+    width:  80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+header .project-nav .back-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: url('../assets/icons/previous.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+header .project-nav .profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid purple;
+    cursor: pointer;
+}
+
+header .project-nav .profile-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+header .project-nav h3{
+    font-family: var(--extra-font);
+    font-size: var(--extra-font-size);
+    border-radius: 10px;
+    border: 1px solid wheat;
+    padding: 5px;
+    background: var(--background-color);
+}
+
+header .project-nav h3 a{
+    text-decoration: none;
+    color: var(--oficial-color);
+}
+
+main{
+    width: 100%;
+    min-width: 320px;
+    max-width: 450px;
+    height: auto;
+    background-color: var(--background-color);
+    color: var(--oficial-color);
+    padding: 20px 0;
+    border-top: 3px solid red ;
+}
+
+main .project-article{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+main .project-article h1{
+    font-size: var(--title-size);
+    font-family: var(--title-font);
+    font-weight: var(--title-font-wight);
+    color: yellow;
+    margin: 10px 0;
+}
+
+main .project-article p{
+    font-size: var(--text-size);
+    font-family: var(--text-font);
+    font-weight: var(--text-font-wight);
+    color: var(--oficial-color);
+    margin: 10px 0;
+}
+
+main .top-projects{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+}
+
+main .top-projects h2{
+    font-size: var(--title-size);
+    font-family: var(--title-font);
+    font-weight: var(--title-font-wight);
+    color: var(--title-Color);
+    text-align: center;
+}
+
+main .top-projects .project-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+main .top-projects .project-container .top-project-card{
+    width: 130px;
+    height: 250px;
+    border-radius: 5px;
+    background-color: yellowgreen;
+}
+
+main .top-projects .project-container .top-project-card h3{
+    margin-top: 10px;
+    text-align: center;
+    font-size: var(--text-size);
+    font-family: var(--extra-font);
+    font-weight: var(--title-font-wight);
+    color: red;
+    border-bottom: 3px solid salmon;
+}
+
+footer{
+    width: 100%;
+    min-width: 320px;
+    max-width: 450px;
+    height:auto;
+    text-align: center;
+    background-color: var(--oficial-color);
+    color: var(--background-color);
+    padding-top: 10px;
+}

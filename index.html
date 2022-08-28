@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/status.css">
+    <link rel="stylesheet" href="./style/media-query/phone.css" media="(min-width:450px)">
+    <link rel="stylesheet" href="./style/media-query/mini-tablet.css" media="(min-width:601px)">
+    <link rel="stylesheet" href="./style/media-query/tablet.css" media="(min-width:791px)">
+    <link rel="stylesheet" href="./style/media-query/laptop.css" media="(min-width:1025px)">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
@@ -18,6 +23,43 @@
 <body>
 
     <header>
+
+        <section class="status-section inactive">
+            <div class="social-media youtube back-btn"></div>
+            <div class="article-container">
+
+                <section class="about-me--status">
+
+                    <article class="as--article article-status1">
+                        <h1>About me:</h1>
+        
+                        <p>Hey! my name's Alex Maurice and im a full-stack student, welcome to my portafolio.
+                            Here i'll share with my followers some projects that i have been doing and learning throughout the courses.
+        
+                            <br> <br>
+                            Im a JavaScript fan, and i have make some projects very interesting like <a href="#">Sam Movies</a>, this an app you can use to search some movies or shows, i build this app with <a href="#">TMDB api</a>. Like this i have others amazing projects to practice my habilities with HTML, CSS, JS or other pragramacion languages.
+                        </p>
+                    </article>
+        
+                    <article class="as--article article-status2">
+                        <h2>More interesting things in my life</h2>
+        
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ipsum assumenda sed accusamus rerum quo sit cum, odio illum dolorem mollitia unde facere minus, similique fugit ullam dolores vel accusantium. 
+                            <br> <br>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ipsum assumenda sed accusamus rerum quo sit cum, odio illum dolorem mollitia unde facere minus, similique fugit ullam dolores vel accusantium. <br> <br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur molestiae, velit voluptatibus excepturi fuga consequuntur quasi eaque ut vel corrupti adipisci! Quibusdam doloribus quam, fugit fugiat cumque cupiditate adipisci voluptatum. <br> <br>
+    
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum at nemo molestias saepe numquam, in neque? Dignissimos cum temporibus, ullam corrupti placeat similique illo sed quae distinctio esse delectus dolores.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum at nemo molestias saepe numquam, in neque? Dignissimos cum temporibus, ullam corrupti placeat similique illo sed quae distinctio esse delectus dolores.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum at nemo molestias saepe numquam, in neque? Dignissimos cum temporibus, ullam corrupti placeat similique illo sed quae distinctio esse delectus dolores.
+                        </p>
+                    </article>
+                </section>
+                
+            </div>
+        </section>
+
         <div class="profile-img">
             <img src="./assets/image/perfil.jpg" alt="profile perfile">
         </div>
@@ -25,6 +67,7 @@
         <p class="header-p">Hello World!</p>
 
         <nav>
+            
             <div class="social-media github"></div>
             <div class="social-media twitter"></div>
             <div class="social-media instagram"></div>
@@ -49,8 +92,6 @@
                 </p>
             </article>
         </section>
-
-
         <section class="project-section">
             <h2>Projects</h2>
 
@@ -102,11 +143,11 @@
 
             </section>
 
-            <h4><a href="#">More projects?</a></h4>
+            <h4><a href="/project.html">More projects?</a></h4>
         </section>
 
         <section class="news-section">
-            <h2>Some News</h2>
+            <h2><a href="/some-news.html">Some News</a></h2>
 
             <article class="news-article special-news">
                 <h3>IA VS Human</h3>
@@ -156,7 +197,7 @@
         </section>
     </main>
 
-    <aside> 
+    <aside class=""> 
         <section class="aside-section-1">
             <article class="aside-article">
                 <h5>Some random things...</h5>
@@ -191,6 +232,6 @@
     </aside>
 
 
-    <footer> We're done here, thank! </footer>
+    <footer class=""> We're done here, thank! </footer>
 </body>
 </html>

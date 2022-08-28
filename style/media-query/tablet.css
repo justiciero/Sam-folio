@@ -1,0 +1,28 @@
+header{
+        max-width: 1024px;
+        height: 400px;
+        background-position: center;
+    }
+    .status-section{
+        max-width: 1024px;
+    }
+    header .social-media-unique{
+        right: 50%;
+        left: 50%;
+        width: 90px;
+    }
+    
+    main{
+        max-width: 1024px;
+    }
+
+    main .news-section .news-container .news-article{
+        width: 290px;
+    }
+
+    aside{
+        max-width: 1024px;
+    }
+    footer{
+        max-width: 1024px;
+    }

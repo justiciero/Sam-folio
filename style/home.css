@@ -1,5 +1,8 @@
 /* Agregando variables */
 
+.inactive{
+    display: none;
+}
 :root{
 
     /* Color */
@@ -205,6 +208,23 @@ main .project-section .project-section-scroll{
     scroll-snap-type:x proximity;
 }
 
+main .project-section .project-section-scroll::-webkit-scrollbar-track
+{
+ -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+ background-color: #F5F5F5;
+}
+
+main .project-section .project-section-scroll::-webkit-scrollbar
+{
+ width: 10px;
+
+}
+
+main .project-section .project-section-scroll::-webkit-scrollbar-thumb
+{
+    background-color:brown;
+}
+
 .project-section .project-section-scroll .project-cards{
     scroll-snap-align: center;
     width: 100%;
@@ -228,6 +248,12 @@ main .project-section .project-section-scroll{
     background-size: cover;
     background-blend-mode: darken;
 }
+.project-section .project-section-scroll .cards-img-1:hover{
+    background: rgba(0,0,0,0.7) url('../assets/image/Sam-movies-view2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
 
 .project-section .project-section-scroll .cards-img-2{
     background: rgba(0,0,0,0.7) url('../assets/image/wikipedia.png');
@@ -247,6 +273,12 @@ main .project-section .project-section-scroll{
 
 .project-section .project-section-scroll .cards-img-4{
     background: rgba(0,0,0,0.7) url('../assets/image/portafolio-2.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.project-section .project-section-scroll .cards-img-4:hover{
+    background: rgba(0,0,0,0.7) url('../assets/image/portafolio-1.jfif');
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
@@ -295,8 +327,12 @@ main .news-section h2{
     font-size: var(--title-size);
     font-family: var(--title-font);
     font-weight: var(--title-font-wight);
-    color: var(--oficial-color);
     margin-bottom: 10px;
+}
+
+main .news-section h2 a{
+    color: var(--oficial-color);
+    text-decoration: none;
 }
 
 main .news-section .news-article{
@@ -399,129 +435,4 @@ footer{
     text-align: center;
     background-color: var(--background-color);
     color: var(--oficial-color);
-}
-
-@media (min-width: 450px) {
-    header{
-        max-width: 600px;
-        height: 250px;
-        background-position: center;
-    }
-    main{
-        max-width: 600px;
-    }
-
-    /* main .news-section .news-container .news-article{
-        width: 200px;
-    } */
-
-    aside{
-        max-width: 600px;
-    }
-    footer{
-        max-width: 600px;
-    }
-}
-
-@media (min-width: 601px) {
-    header{
-        max-width: 790px;
-        height: 300px;
-        background-position: center;
-    }
-
-    header .social-media-unique{
-        right: 50%;
-        left: 50%;
-        width: 90px;
-    }
-
-    main{
-        max-width: 790px;
-    }
-
-    main .news-section .news-container .news-article{
-        width: 260px;
-    }
-
-    aside{
-        max-width: 790px;
-    }
-    footer{
-        max-width: 790px;
-    }
-}
-
-@media (min-width: 791px) {
-    header{
-        max-width: 1024px;
-        height: 400px;
-        background-position: center;
-    }
-    header .social-media-unique{
-        right: 50%;
-        left: 50%;
-        width: 90px;
-    }
-    
-    main{
-        max-width: 1024px;
-    }
-
-    main .news-section .news-container .news-article{
-        width: 290px;
-    }
-
-    aside{
-        max-width: 1024px;
-    }
-    footer{
-        max-width: 1024px;
-    }
-}
-
-@media (min-width: 1025px) {
-        header{
-            max-width: 2560px;
-            height: 490px;
-            background-position: center;
-        }
-        header .profile-img{
-            bottom: 90px;
-            width: 160px;
-            height: 160px;
-        }
-        
-        main{
-            max-width: 2560px;
-        }
-        main .aboutme-section{
-           padding: 50px 0;
-        }
-
-        .project-section .project-section-scroll .project-cards{
-            height: 400px;
-            margin-bottom: 15px;
-            border-radius: 15px;
-        }
-
-        .project-section .project-section-scroll .project-cards--img{
-            height: 400px;
-        }
-
-        main .news-section{
-           padding: 50px 0;
-        }
-    
-        main .news-section .news-container .news-article{
-            width: 280px;
-        }
-    
-        aside{
-            max-width: 2560px;
-        }
-
-        footer{
-            max-width: 2560px;
-        }
 }

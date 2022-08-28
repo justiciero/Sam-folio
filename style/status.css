@@ -1,0 +1,62 @@
+
+.status-section{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-width: 320px;
+    max-width: 600px;
+    height: auto;
+    background:rgba(0,0,0,0.7) url("../assets/image/viaje-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+}
+
+.article-container .about-me--status{
+    padding: 100px 0 50px 0;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.article-container .about-me--status .article-status1 h1{
+    margin-bottom: 20px;
+    font-family: var(--title-font);
+    color: green;
+    font-size: 26px;
+    text-align: center;
+}
+
+.article-container .about-me--status .article-status2 h2{
+
+    margin-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: var(--text-font);
+    color: greenyellow;
+    font-size: 24px;
+}
+
+.article-container .about-me--status .article-status1 p, .about-me--status .article-status2 p{
+    font-family: var(--text-font);
+    color: whitesmoke !important;
+}
+
+.article-container .about-me--status .article-status1 p a, .about-me--status .article-status2  a{
+    font-size: var(--random-size);
+    color: greenyellow;
+}
+
+header .status-section .back-btn{
+    position: absolute;
+   left: 10px;
+   top: 10px; 
+   width: 35px;
+   height: 35px;
+   border-radius: 100%;
+   background: url('../assets/icons/previous.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   cursor: pointer;
+}
